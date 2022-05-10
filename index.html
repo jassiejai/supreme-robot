@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- import fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- make sure to like the scss to the html -->
+    <link rel="stylesheet" href="dist/css/style.min.css" >
+    <!-- add a js script tag  add module type for imports-->
+    <script src="js/main.js" type="module"></script>
+    <title>Hair List</title>
+</head>
+<body>
+
+    <!-- used to cut down on divs -->
+    <main>
+        <section class="newItemEntry">
+            <form id="itemEntryForm">
+                <label for="newItem"> Enter a New Item</label>
+                <input id="newItem" type="text" autocomplete="on" placeholder="Add Item" tabindex="0">
+                <!-- aria label helps wth screen readability -->
+                <button id="addItem" class="button" title="Add New Item" aria-label="Add new item to the list" tabindex="0">+</button>
+            </form>
+        </section>
+        <section class="listContainer">
+            <div class="listTitle">
+                <h1>To Do list</h1>
+                <button id="clearItems" class="button" title="Clear the list" aria-label="Remove all items from the list" tabindex="0">Clear</button>
+            </div>
+
+            <hr/>
+
+            <div id="listItems">
+                <!-- items will be added using javascript -->
+                <!-- <div class="item">
+                    <input type="checkbox" id="1" tabindex="0">
+                    <label for="1">Eat</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="2" tabindex="0">
+                    <label for="2">Sleep</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="3" tabindex="0">
+                    <label for="3">Dance</label>
+                </div> -->
+            </div>
+            <p id="confirmation" class="confirmation" aria-live="assertive"></p>
+
+        </section>
+
+    </main>
+    
+</body>
+</html>
