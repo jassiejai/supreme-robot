@@ -144,7 +144,7 @@ const processSubmisson = () => {
     toDoList.addItemToList(toDoItem);
 
     updatePersistentData(toDoList.getList());
-    updateScreenReader(newEntryText, actionVerb);
+    updateScreenReader(newEntryText, "Item has been added");
 
     refreshThePage();
 }
